@@ -2,15 +2,15 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var flag = Flag(emoji: "🇸🇬", description: "Singapore")
+    @ObservedObject var flagDataManager = FlagDataManager()
     
     var body: some View {
         TabView {
-            FlagRaisingView(flag: $flag)
+            FlagRaisingView(flagOffset: $flagDataManager.flagOffset, flag: $flagDataManager.flag)
                 .tabItem {
                     Label("Flag Raising", systemImage: "arrow.up")
                 }
-            FlagSelectorView(selectedFlag: $flag)
+            FlagSelectorView(selectedFlag: $flagDataManager.flag)
                 .tabItem {
                     Label("Flag Selector", systemImage: "flag.badge.ellipsis")
                 }

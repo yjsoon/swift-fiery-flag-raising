@@ -17,6 +17,7 @@
 		32AF694126E2532D0057BB9D /* FlagSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AF694026E2532D0057BB9D /* FlagSelectorView.swift */; };
 		32AF694726E473370057BB9D /* FlagData.json in Resources */ = {isa = PBXBuildFile; fileRef = 32AF694626E473370057BB9D /* FlagData.json */; };
 		32AF694926E473400057BB9D /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AF694826E473400057BB9D /* Flag.swift */; };
+		AF3C363326E71390004893AB /* FlagDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3C363226E71390004893AB /* FlagDataManager.swift */; };
 		AF53296A26E70B6C0000A23F /* FirebaseDatabaseSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = AF53296926E70B6C0000A23F /* FirebaseDatabaseSwift-Beta */; };
 		AF53296C26E710600000A23F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF53296B26E710600000A23F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
@@ -55,6 +56,7 @@
 		32AF694026E2532D0057BB9D /* FlagSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagSelectorView.swift; sourceTree = "<group>"; };
 		32AF694626E473370057BB9D /* FlagData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FlagData.json; sourceTree = "<group>"; };
 		32AF694826E473400057BB9D /* Flag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flag.swift; sourceTree = "<group>"; };
+		AF3C363226E71390004893AB /* FlagDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagDataManager.swift; sourceTree = "<group>"; };
 		AF53296B26E710600000A23F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +114,7 @@
 				32AF691126E24A490057BB9D /* ContentView.swift */,
 				32AF693C26E253150057BB9D /* FlagRaisingView.swift */,
 				32AF694026E2532D0057BB9D /* FlagSelectorView.swift */,
+				AF3C363226E71390004893AB /* FlagDataManager.swift */,
 				32AF694826E473400057BB9D /* Flag.swift */,
 				32AF694626E473370057BB9D /* FlagData.json */,
 				32AF691326E24A4B0057BB9D /* Assets.xcassets */,
@@ -285,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32AF691226E24A490057BB9D /* ContentView.swift in Sources */,
+				AF3C363326E71390004893AB /* FlagDataManager.swift in Sources */,
 				32AF691026E24A490057BB9D /* Firey_Flag_RaisingApp.swift in Sources */,
 				32AF694926E473400057BB9D /* Flag.swift in Sources */,
 				32AF693D26E253150057BB9D /* FlagRaisingView.swift in Sources */,

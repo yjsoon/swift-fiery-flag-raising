@@ -2,7 +2,7 @@ import SwiftUI
 
 struct FlagRaisingView: View {
     
-    @AppStorage("flagOffset") var offset: Double = 20
+    @Binding var flagOffset: Double
     @Binding var flag: Flag
     
     var body: some View {
@@ -14,16 +14,16 @@ struct FlagRaisingView: View {
                 
                 Text(flag.emoji)
                     .font(.system(size: 100))
-                    .offset(x: 0, y: CGFloat(offset))
+                    .offset(x: 0, y: CGFloat(flagOffset))
             }
             
             Button("Raise Flag") {
-                offset -= 10
+                flagOffset -= 10
             }
             .padding()
             
             Button("Reset") {
-                offset = 20
+                flagOffset = 20
             }
             .padding()
         }
@@ -32,6 +32,6 @@ struct FlagRaisingView: View {
 
 struct FlagRaisingView_Previews: PreviewProvider {
     static var previews: some View {
-        FlagRaisingView(flag: .constant(Flag(emoji: "🇸🇬", description: "Singapore")))
+        FlagRaisingView(flagOffset: .constant(20.0), flag: .constant(Flag(emoji: "🇸🇬", description: "Singapore")))
     }
 }
