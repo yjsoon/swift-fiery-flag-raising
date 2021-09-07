@@ -15,4 +15,14 @@ class FlagDataManager: ObservableObject {
     @Published var flag = Flag(emoji: "🇸🇬", description: "Singapore")
     @Published var flagOffset = 20.0
     
+    let ref = Database.database().reference()
+    
+    func saveFlag() {
+        try? ref.child("flag").setValue(from: flag)
+    }
+    
+    func saveFlagOffset() {
+        try? ref.child("offset").setValue(from: flagOffset)
+    }
+
 }

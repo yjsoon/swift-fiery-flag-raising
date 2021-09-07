@@ -15,6 +15,13 @@ struct ContentView: View {
                     Label("Flag Selector", systemImage: "flag.badge.ellipsis")
                 }
         }
+        .onChange(of: flagDataManager.flag, perform: { value in
+            flagDataManager.saveFlag()
+        })
+        .onChange(of: flagDataManager.flagOffset, perform: { value in
+            flagDataManager.saveFlagOffset()
+        })
+
     }
 }
 
