@@ -21,6 +21,9 @@ struct ContentView: View {
         .onChange(of: flagDataManager.flagOffset, perform: { value in
             flagDataManager.saveFlagOffset()
         })
+        .onAppear {
+            flagDataManager.setupDataObserver()
+        }
 
     }
 }

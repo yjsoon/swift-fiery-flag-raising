@@ -24,5 +24,20 @@ class FlagDataManager: ObservableObject {
     func saveFlagOffset() {
         try? ref.child("offset").setValue(from: flagOffset)
     }
+    
+    func setupDataObserver() {
+        ref.observe(.value) { snapshot in
+            let flagSnapshot = snapshot.childSnapshot(forPath: "flag")
+            if let flag = try? flagSnapshot.data(as: Flag.self) {
+                self.flag = flag
+            }
+            
+            let flagOffsetSnapshot = snapshot.childSnapshot(forPath: "offset")
+            if let flagOffset = try? flagOffsetSnapshot.data(as: Double.self) {
+                self.flagOffset = flagOffset
+            }
+
+        }
+    }
 
 }
