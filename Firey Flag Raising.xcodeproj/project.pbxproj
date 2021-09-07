@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32AF691026E24A490057BB9D /* Firey_Flag_RaisingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AF690F26E24A490057BB9D /* Firey_Flag_RaisingApp.swift */; };
+		32AF691226E24A490057BB9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AF691126E24A490057BB9D /* ContentView.swift */; };
+		32AF691426E24A4B0057BB9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32AF691326E24A4B0057BB9D /* Assets.xcassets */; };
+		32AF691726E24A4B0057BB9D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32AF691626E24A4B0057BB9D /* Preview Assets.xcassets */; };
+		32AF692226E24A4B0057BB9D /* Firey_Flag_RaisingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AF692126E24A4B0057BB9D /* Firey_Flag_RaisingTests.swift */; };
+		32AF692D26E24A4B0057BB9D /* Firey_Flag_RaisingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AF692C26E24A4B0057BB9D /* Firey_Flag_RaisingUITests.swift */; };
+		32AF693D26E253150057BB9D /* FlagRaisingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AF693C26E253150057BB9D /* FlagRaisingView.swift */; };
+		32AF694126E2532D0057BB9D /* FlagSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AF694026E2532D0057BB9D /* FlagSelectorView.swift */; };
+		32AF694726E473370057BB9D /* FlagData.json in Resources */ = {isa = PBXBuildFile; fileRef = 32AF694626E473370057BB9D /* FlagData.json */; };
+		32AF694926E473400057BB9D /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AF694826E473400057BB9D /* Flag.swift */; };
+		AF53296A26E70B6C0000A23F /* FirebaseDatabaseSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = AF53296926E70B6C0000A23F /* FirebaseDatabaseSwift-Beta */; };
+		AF53296C26E710600000A23F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF53296B26E710600000A23F /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32AF691E26E24A4B0057BB9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32AF690426E24A490057BB9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32AF690B26E24A490057BB9D;
+			remoteInfo = "Firey Flag Raising";
+		};
+		32AF692926E24A4B0057BB9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32AF690426E24A490057BB9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32AF690B26E24A490057BB9D;
+			remoteInfo = "Firey Flag Raising";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		32AF690C26E24A490057BB9D /* Firey Flag Raising.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Firey Flag Raising.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32AF690F26E24A490057BB9D /* Firey_Flag_RaisingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firey_Flag_RaisingApp.swift; sourceTree = "<group>"; };
+		32AF691126E24A490057BB9D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		32AF691326E24A4B0057BB9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32AF691626E24A4B0057BB9D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		32AF691826E24A4B0057BB9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32AF691D26E24A4B0057BB9D /* Firey Flag RaisingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Firey Flag RaisingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32AF692126E24A4B0057BB9D /* Firey_Flag_RaisingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firey_Flag_RaisingTests.swift; sourceTree = "<group>"; };
+		32AF692326E24A4B0057BB9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32AF692826E24A4B0057BB9D /* Firey Flag RaisingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Firey Flag RaisingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32AF692C26E24A4B0057BB9D /* Firey_Flag_RaisingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firey_Flag_RaisingUITests.swift; sourceTree = "<group>"; };
+		32AF692E26E24A4B0057BB9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32AF693C26E253150057BB9D /* FlagRaisingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagRaisingView.swift; sourceTree = "<group>"; };
+		32AF694026E2532D0057BB9D /* FlagSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagSelectorView.swift; sourceTree = "<group>"; };
+		32AF694626E473370057BB9D /* FlagData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FlagData.json; sourceTree = "<group>"; };
+		32AF694826E473400057BB9D /* Flag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flag.swift; sourceTree = "<group>"; };
+		AF53296B26E710600000A23F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32AF690926E24A490057BB9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF53296A26E70B6C0000A23F /* FirebaseDatabaseSwift-Beta in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32AF691A26E24A4B0057BB9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32AF692526E24A4B0057BB9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32AF690326E24A490057BB9D = {
+			isa = PBXGroup;
+			children = (
+				32AF690E26E24A490057BB9D /* Firey Flag Raising */,
+				32AF692026E24A4B0057BB9D /* Firey Flag RaisingTests */,
+				32AF692B26E24A4B0057BB9D /* Firey Flag RaisingUITests */,
+				32AF690D26E24A490057BB9D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		32AF690D26E24A490057BB9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32AF690C26E24A490057BB9D /* Firey Flag Raising.app */,
+				32AF691D26E24A4B0057BB9D /* Firey Flag RaisingTests.xctest */,
+				32AF692826E24A4B0057BB9D /* Firey Flag RaisingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32AF690E26E24A490057BB9D /* Firey Flag Raising */ = {
+			isa = PBXGroup;
+			children = (
+				AF53296B26E710600000A23F /* GoogleService-Info.plist */,
+				32AF690F26E24A490057BB9D /* Firey_Flag_RaisingApp.swift */,
+				32AF691126E24A490057BB9D /* ContentView.swift */,
+				32AF693C26E253150057BB9D /* FlagRaisingView.swift */,
+				32AF694026E2532D0057BB9D /* FlagSelectorView.swift */,
+				32AF694826E473400057BB9D /* Flag.swift */,
+				32AF694626E473370057BB9D /* FlagData.json */,
+				32AF691326E24A4B0057BB9D /* Assets.xcassets */,
+				32AF691826E24A4B0057BB9D /* Info.plist */,
+				32AF691526E24A4B0057BB9D /* Preview Content */,
+			);
+			path = "Firey Flag Raising";
+			sourceTree = "<group>";
+		};
+		32AF691526E24A4B0057BB9D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				32AF691626E24A4B0057BB9D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		32AF692026E24A4B0057BB9D /* Firey Flag RaisingTests */ = {
+			isa = PBXGroup;
+			children = (
+				32AF692126E24A4B0057BB9D /* Firey_Flag_RaisingTests.swift */,
+				32AF692326E24A4B0057BB9D /* Info.plist */,
+			);
+			path = "Firey Flag RaisingTests";
+			sourceTree = "<group>";
+		};
+		32AF692B26E24A4B0057BB9D /* Firey Flag RaisingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				32AF692C26E24A4B0057BB9D /* Firey_Flag_RaisingUITests.swift */,
+				32AF692E26E24A4B0057BB9D /* Info.plist */,
+			);
+			path = "Firey Flag RaisingUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32AF690B26E24A490057BB9D /* Firey Flag Raising */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32AF693126E24A4B0057BB9D /* Build configuration list for PBXNativeTarget "Firey Flag Raising" */;
+			buildPhases = (
+				32AF690826E24A490057BB9D /* Sources */,
+				32AF690926E24A490057BB9D /* Frameworks */,
+				32AF690A26E24A490057BB9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Firey Flag Raising";
+			packageProductDependencies = (
+				AF53296926E70B6C0000A23F /* FirebaseDatabaseSwift-Beta */,
+			);
+			productName = "Firey Flag Raising";
+			productReference = 32AF690C26E24A490057BB9D /* Firey Flag Raising.app */;
+			productType = "com.apple.product-type.application";
+		};
+		32AF691C26E24A4B0057BB9D /* Firey Flag RaisingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32AF693426E24A4B0057BB9D /* Build configuration list for PBXNativeTarget "Firey Flag RaisingTests" */;
+			buildPhases = (
+				32AF691926E24A4B0057BB9D /* Sources */,
+				32AF691A26E24A4B0057BB9D /* Frameworks */,
+				32AF691B26E24A4B0057BB9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32AF691F26E24A4B0057BB9D /* PBXTargetDependency */,
+			);
+			name = "Firey Flag RaisingTests";
+			productName = "Firey Flag RaisingTests";
+			productReference = 32AF691D26E24A4B0057BB9D /* Firey Flag RaisingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		32AF692726E24A4B0057BB9D /* Firey Flag RaisingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32AF693726E24A4B0057BB9D /* Build configuration list for PBXNativeTarget "Firey Flag RaisingUITests" */;
+			buildPhases = (
+				32AF692426E24A4B0057BB9D /* Sources */,
+				32AF692526E24A4B0057BB9D /* Frameworks */,
+				32AF692626E24A4B0057BB9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32AF692A26E24A4B0057BB9D /* PBXTargetDependency */,
+			);
+			name = "Firey Flag RaisingUITests";
+			productName = "Firey Flag RaisingUITests";
+			productReference = 32AF692826E24A4B0057BB9D /* Firey Flag RaisingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32AF690426E24A490057BB9D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					32AF690B26E24A490057BB9D = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					32AF691C26E24A4B0057BB9D = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 32AF690B26E24A490057BB9D;
+					};
+					32AF692726E24A4B0057BB9D = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 32AF690B26E24A490057BB9D;
+					};
+				};
+			};
+			buildConfigurationList = 32AF690726E24A490057BB9D /* Build configuration list for PBXProject "Firey Flag Raising" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32AF690326E24A490057BB9D;
+			packageReferences = (
+				AF53296826E70B6C0000A23F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 32AF690D26E24A490057BB9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32AF690B26E24A490057BB9D /* Firey Flag Raising */,
+				32AF691C26E24A4B0057BB9D /* Firey Flag RaisingTests */,
+				32AF692726E24A4B0057BB9D /* Firey Flag RaisingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32AF690A26E24A490057BB9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32AF691726E24A4B0057BB9D /* Preview Assets.xcassets in Resources */,
+				AF53296C26E710600000A23F /* GoogleService-Info.plist in Resources */,
+				32AF694726E473370057BB9D /* FlagData.json in Resources */,
+				32AF691426E24A4B0057BB9D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32AF691B26E24A4B0057BB9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32AF692626E24A4B0057BB9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32AF690826E24A490057BB9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32AF691226E24A490057BB9D /* ContentView.swift in Sources */,
+				32AF691026E24A490057BB9D /* Firey_Flag_RaisingApp.swift in Sources */,
+				32AF694926E473400057BB9D /* Flag.swift in Sources */,
+				32AF693D26E253150057BB9D /* FlagRaisingView.swift in Sources */,
+				32AF694126E2532D0057BB9D /* FlagSelectorView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32AF691926E24A4B0057BB9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32AF692226E24A4B0057BB9D /* Firey_Flag_RaisingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32AF692426E24A4B0057BB9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32AF692D26E24A4B0057BB9D /* Firey_Flag_RaisingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32AF691F26E24A4B0057BB9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32AF690B26E24A490057BB9D /* Firey Flag Raising */;
+			targetProxy = 32AF691E26E24A4B0057BB9D /* PBXContainerItemProxy */;
+		};
+		32AF692A26E24A4B0057BB9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32AF690B26E24A490057BB9D /* Firey Flag Raising */;
+			targetProxy = 32AF692926E24A4B0057BB9D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		32AF692F26E24A4B0057BB9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		32AF693026E24A4B0057BB9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32AF693226E24A4B0057BB9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Firey Flag Raising/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Firey Flag Raising/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "sg.tk.Firey-Flag-Raising";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		32AF693326E24A4B0057BB9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Firey Flag Raising/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Firey Flag Raising/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "sg.tk.Firey-Flag-Raising";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		32AF693526E24A4B0057BB9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Firey Flag RaisingTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "sg.tk.Firey-Flag-RaisingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Firey Flag Raising.app/Firey Flag Raising";
+			};
+			name = Debug;
+		};
+		32AF693626E24A4B0057BB9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Firey Flag RaisingTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "sg.tk.Firey-Flag-RaisingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Firey Flag Raising.app/Firey Flag Raising";
+			};
+			name = Release;
+		};
+		32AF693826E24A4B0057BB9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Firey Flag RaisingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "sg.tk.Firey-Flag-RaisingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Firey Flag Raising";
+			};
+			name = Debug;
+		};
+		32AF693926E24A4B0057BB9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Firey Flag RaisingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "sg.tk.Firey-Flag-RaisingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Firey Flag Raising";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32AF690726E24A490057BB9D /* Build configuration list for PBXProject "Firey Flag Raising" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32AF692F26E24A4B0057BB9D /* Debug */,
+				32AF693026E24A4B0057BB9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32AF693126E24A4B0057BB9D /* Build configuration list for PBXNativeTarget "Firey Flag Raising" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32AF693226E24A4B0057BB9D /* Debug */,
+				32AF693326E24A4B0057BB9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32AF693426E24A4B0057BB9D /* Build configuration list for PBXNativeTarget "Firey Flag RaisingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32AF693526E24A4B0057BB9D /* Debug */,
+				32AF693626E24A4B0057BB9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32AF693726E24A4B0057BB9D /* Build configuration list for PBXNativeTarget "Firey Flag RaisingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32AF693826E24A4B0057BB9D /* Debug */,
+				32AF693926E24A4B0057BB9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AF53296826E70B6C0000A23F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AF53296926E70B6C0000A23F /* FirebaseDatabaseSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF53296826E70B6C0000A23F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseDatabaseSwift-Beta";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 32AF690426E24A490057BB9D /* Project object */;
+}
